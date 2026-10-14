@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Log (Blog) — Frank, Wong Chi-Leon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="starfield"></canvas><div class="nebula"></div>
+<nav class="nav"><div class="nav-inner">
+  <a class="brand" href="index.html"><span class="brand-orbit"></span><span>FRANK, WONG CHI-LEON<small>DEEP-SPACE PORTFOLIO</small></span></a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div class="links" id="navLinks">
+    <a href="index.html">◈ Home</a><a href="resume.html">▤ Resume</a>
+    <a href="projects.html">⬡ Projects</a><a href="about.html">◉ About</a><a href="blog.html" class="active">✎ Blog</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+  <div class="page-hero">
+    <div class="kicker">✎ Research log · peer-reviewed by my cat · vol. IV</div>
+    <h1 style="margin:.4rem 0">Research Log <span style="color:var(--cyan)">/ Blog</span></h1>
+    <p class="muted">Articles, field photographs, and video transmissions. Dummy content — replace with your own posts. To add one, duplicate a <span class="mono">.post</span> card.</p>
+  </div>
+
+  <div class="section-title">◈ Featured Transmission (video)</div>
+  <div class="card reveal">
+    <h3>🎥 VIDEO LOG 047 — How I detected a super-Earth in 48 hours of TESS data</h3>
+    <p class="muted">12-min walkthrough: detrending, BLS periodogram, vetting. Dummy embed — swap the YouTube ID with yours.</p>
+    <div class="video-wrap">
+      <iframe height="380" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Sample video" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p style="margin-top:.6rem"><span class="tag">VIDEO</span><span class="tag">EXOPLANETS</span><span class="mono muted"> · 12 min · 8.4k views</span></p>
+  </div>
+
+  <div class="section-title">◈ All Logs</div>
+  <div class="blog-grid">
+    <article class="card post reveal">
+      <img src="https://picsum.photos/seed/k218b-spectra/600/300" alt="Spectra">
+      <div class="body"><span class="tag">SPECTROSCOPY</span><span class="mono muted" style="font-size:.72rem"> · OCT 02, 2026 · 8 MIN</span>
+        <h3>K2-18b: reading water vapor in a pixel of light</h3>
+        <p>How transmission spectroscopy turns a 0.02% dip into molecular fingerprints — plus my Python notebook for fitting H₂O bands...</p>
+        <a href="#" style="color:var(--cyan)">Read log →</a></div>
+    </article>
+    <article class="card post reveal">
+      <img src="https://picsum.photos/seed/saturn-rings/600/300" alt="Saturn">
+      <div class="body"><span class="tag">ASTROPHOTOGRAPHY</span><span class="mono muted" style="font-size:.72rem"> · SEP 14, 2026 · 5 MIN</span>
+        <h3>Photographing Saturn with an 8″ Dobsonian</h3>
+        <p>Lucky imaging, 12,000 frames, one very patient planet. Full capture → stacking → wavelet sharpening pipeline inside...</p>
+        <a href="#" style="color:var(--cyan)">Read log →</a></div>
+    </article>
+    <article class="card post reveal">
+      <img src="https://picsum.photos/seed/orbital-mech/600/300" alt="Orbits">
+      <div class="body"><span class="tag">ORBITAL MECHANICS</span><span class="mono muted" style="font-size:.72rem"> · AUG 30, 2026 · 11 MIN</span>
+        <h3>Porkchop plots: the art of leaving Earth cheaply</h3>
+        <p>Lambert solvers, C3 budgets, and why November 2026 is delicious for Mars. Interactive plot included...</p>
+        <a href="#" style="color:var(--cyan)">Read log →</a></div>
+    </article>
+    <article class="card post reveal">
+      <img src="https://picsum.photos/seed/rust-wasm/600/300" alt="Code">
+      <div class="body"><span class="tag">ENGINEERING</span><span class="mono muted" style="font-size:.72rem"> · AUG 02, 2026 · 6 MIN</span>
+        <h3>10k bodies at 60fps: Rust + WASM gravity</h3>
+        <p>Barnes-Hut octrees, SoA layouts, and SIMD — making your browser outrun a small supercomputer...</p>
+        <a href="#" style="color:var(--cyan)">Read log →</a></div>
+    </article>
+    <article class="card post reveal">
+      <img src="https://picsum.photos/seed/night-sky/600/300" alt="Night sky">
+      <div class="body"><span class="tag">FIELD NOTES</span><span class="mono muted" style="font-size:.72rem"> · JUL 19, 2026 · 4 MIN</span>
+        <h3>Three nights at Paranal: oxygen, silence, lasers</h3>
+        <p>Field diary from the Very Large Telescope — adaptive-optics lasers, −10°C control rooms, emergency chocolate...</p>
+        <a href="#" style="color:var(--cyan)">Read log →</a></div>
+    </article>
+    <article class="card post reveal">
+      <div class="ph" style="background:linear-gradient(135deg,#6d28d9,#0891b2);display:grid;place-items:center;font-size:3rem">🎙</div>
+      <div class="body"><span class="tag">PODCAST</span><span class="mono muted" style="font-size:.72rem"> · JUL 01, 2026 · 32 MIN</span>
+        <h3>Audio log: do dashboards need error bars? (yes)</h3>
+        <p>Dummy HTML5 audio — replace the src with your episode file.</p>
+        <audio controls style="width:100%"><source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"></audio>
+      </div>
+    </article>
+  </div>
+</div>
+<footer>© <span id="year"></span> FRANK, WONG CHI-LEON · research log</footer>
+<script src="main.js"></script>
+</body>
+</html>

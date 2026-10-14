@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Observer Profile (About) — Frank, Wong Chi-Leon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="starfield"></canvas><div class="nebula"></div>
+<nav class="nav"><div class="nav-inner">
+  <a class="brand" href="index.html"><span class="brand-orbit"></span><span>FRANK, WONG CHI-LEON<small>DEEP-SPACE PORTFOLIO</small></span></a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div class="links" id="navLinks">
+    <a href="index.html">◈ Home</a><a href="resume.html">▤ Resume</a>
+    <a href="projects.html">⬡ Projects</a><a href="about.html" class="active">◉ About</a><a href="blog.html">✎ Blog</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+  <div class="page-hero">
+    <div class="kicker">◉ Observer dossier · subject: homo sapiens, curious variant</div>
+    <h1 style="margin:.4rem 0">Observer Profile <span style="color:var(--cyan)">/ About Me</span></h1>
+    <p class="muted">Hypothesis: software tastes better with a pinch of astrophysics. Method: 6 years of controlled experiments in shipping.</p>
+  </div>
+
+  <div class="contact-grid" style="margin-top:1.4rem">
+    <div class="card reveal">
+      <img src="https://picsum.photos/seed/observatory-desk/800/400" alt="Desk setup" style="width:100%;border-radius:12px">
+      <h3 style="margin-top:.8rem">Hello, I am Frank 👋</h3>
+      <p class="muted">Based in Pasadena, CA (34.15° N, 118.14° W). By day I wrangle spacecraft telemetry; by night I photograph Saturn's rings from my balcony with an 8″ Dobsonian. I write about photometry, orbital mechanics, and why your dashboard needs error bars.</p>
+      <p class="muted">When not integrating orbits: trail running, synthwave vinyl, mentoring first-gen STEM students, and perfecting espresso (extraction yield 19.4%, obviously measured).</p>
+      <p><span class="tag">English · German · Python (fluent)</span></p>
+      <div class="mono" style="font-size:.85rem;line-height:2">
+        <div>✉ <a href="mailto:hello@alexnova.space" style="color:var(--cyan)">hello@alexnova.space</a></div>
+        <div>☎ +1 (555) 010-4242</div>
+        <div>⌖ Pasadena, CA · open to remote / hybrid</div>
+        <div>⬡ <a href="#" style="color:var(--cyan)">GitHub</a> · ◈ <a href="#" style="color:var(--cyan)">LinkedIn</a> · ✦ <a href="#" style="color:var(--cyan)">ORCID</a> · ✎ <a href="#" style="color:var(--cyan)">X / Twitter</a></div>
+      </div>
+    </div>
+    <div>
+      <div class="card reveal"><h3>📡 Open a Communication Channel</h3>
+        <p class="muted">Dummy form — wire it to Formspree / Netlify Forms later.</p>
+        <form id="contactForm">
+          <input required placeholder="Your designation (name)">
+          <input required type="email" placeholder="Return frequency (email)">
+          <textarea required rows="4" placeholder="Message payload..."></textarea>
+          <button class="btn" type="submit" style="border:none;cursor:pointer">Transmit Signal ⏎</button>
+          <p id="formMsg" class="mono cyan"></p>
+        </form>
+      </div>
+      <div class="card reveal" style="margin-top:.8rem"><h3>◈ Instrument Manifest</h3>
+        <p class="muted mono" style="font-size:.82rem">Telescope: 8″ Dobsonian · Camera: ASI533MC<br>Workstation: 32-core / 128GB / RTX 4090<br>Editor: VS Code, Vim bindings, 4-space tabs (fight me)</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>© <span id="year"></span> FRANK, WONG CHI-LEON · observer profile</footer>
+<script src="main.js"></script>
+</body>
+</html>

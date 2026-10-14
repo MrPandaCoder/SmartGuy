@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Frank, Wong Chi-Leon — Astrophysical Systems Engineer | Home</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="starfield"></canvas><div class="nebula"></div>
+<nav class="nav"><div class="nav-inner">
+  <a class="brand" href="index.html"><span class="brand-orbit"></span><span>FRANK, WONG CHI-LEON<small>DEEP-SPACE PORTFOLIO</small></span></a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div class="links" id="navLinks">
+    <a href="index.html" class="active">◈ Home</a>
+    <a href="resume.html">▤ Resume</a>
+    <a href="projects.html">⬡ Projects</a>
+    <a href="about.html">◉ About</a>
+    <a href="blog.html">✎ Blog</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <div class="kicker">◈ Stellar Coordinate: RA 05h 35m · Dec −05°23′ · Sol System</div>
+      <h1>Charting software across the <span class="grad">observable universe.</span></h1>
+      <div class="typewrap"><span id="typewriter">> initializing orbital portfolio...</span><span>▌</span></div>
+      <p class="lead">Greetings, fellow traveler. I am <b>Dr. Frank, Wong Chi-Leon</b> — an astrophysical systems engineer & full-stack developer. I convert chaotic cosmic data (and chaotic product requirements) into elegant, high-gravity software: exoplanet pipelines, orbital visualizations, and mission-grade web apps.</p>
+      <div class="btnrow">
+        <a class="btn" href="projects.html">⬡ Explore Mission Archive</a>
+        <a class="btn ghost" href="resume.html">▤ View Flight Record</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>12+</b><span>ORBITAL PROJECTS</span></div>
+        <div class="stat"><b>6 yrs</b><span>MISSION EXPERIENCE</span></div>
+        <div class="stat"><b>34</b><span>RESEARCH LOGS</span></div>
+      </div>
+    </div>
+
+    <div class="portrait-card">
+      <div class="float-badge fb1">● LIVE · DSN LINK</div>
+      <div class="float-badge fb2">SOL 1147 · 21:04 UTC</div>
+      <div class="portrait-top">
+        <!-- Replace src with your own photo: e.g. profile.jpg -->
+        <img class="avatar" src="https://picsum.photos/seed/astronaut-portrait/300/300" alt="Portrait of Frank, Wong Chi-Leon" onerror="this.outerHTML='<div class=avatar-fallback>FW</div>'">
+        <div>
+          <div class="mono cyan">DR. FRANK, WONG CHI-LEON</div>
+          <div class="muted" style="font-size:.9rem">Astrophysical Systems Engineer<br>Full-Stack Developer · Data Viz</div>
+          <div style="margin-top:.4rem"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Astropy</span></div>
+        </div>
+      </div>
+      <div class="telemetry mono" id="telemetryLive" style="margin-top:.8rem">ALT 408.00 km • VEL 7.660 km/s<br>SIG 98.0% • SOL 1361.0 W/m²</div>
+      <div class="solar" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="orbit o1"><span class="planet"></span></div>
+        <div class="orbit o2"><span class="planet"></span></div>
+        <div class="orbit o3"><span class="planet"></span></div>
+        <div class="orbit o4"><span class="planet"></span></div>
+        <div class="label">FIG 1.0 — KEPLERIAN ORBIT SIM · e ≈ 0.016 · a = 1 AU</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-title">◈ 01 · Current Orbital Objectives</div>
+  <div class="grid3">
+    <div class="card reveal"><h3>🛰 Exoplanet Pipeline</h3><p class="muted">Reduced Kepler light-curve noise by 42% using Bayesian detrending. 2,300+ transit candidates catalogued.</p><span class="tag">Python</span><span class="tag">Lightkurve</span></div>
+    <div class="card reveal"><h3>🪐 N-Body Visualizer</h3><p class="muted">Real-time WebGL gravity simulator rendering 10k particles at 60fps. Used in 3 university labs.</p><span class="tag">WebGL</span><span class="tag">Rust/WASM</span></div>
+    <div class="card reveal"><h3>📡 DSN Dashboard</h3><p class="muted">Mission telemetry dashboard tracking 14 deep-space probes with sub-second latency alerts.</p><span class="tag">React</span><span class="tag">WebSockets</span></div>
+  </div>
+
+  <div class="section-title">◈ 02 · Transmission Preview</div>
+  <div class="card reveal">
+    <p class="mono amber">"Any sufficiently advanced technology is indistinguishable from a well-documented API."</p>
+    <p class="muted">Latest research log: <a href="blog.html" style="color:var(--cyan)">Spectroscopic analysis of K2-18b transmission spectra →</a></p>
+  </div>
+</div>
+
+<footer>© <span id="year"></span> FRANK, WONG CHI-LEON · DEEP-SPACE PORTFOLIO · transmitted from 51.6° inclination · <a href="about.html" style="color:var(--cyan)">contact</a></footer>
+<script src="main.js"></script>
+</body>
+</html>

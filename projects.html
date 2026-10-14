@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mission Archive (Projects) — Frank, Wong Chi-Leon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="starfield"></canvas><div class="nebula"></div>
+<nav class="nav"><div class="nav-inner">
+  <a class="brand" href="index.html"><span class="brand-orbit"></span><span>FRANK, WONG CHI-LEON<small>DEEP-SPACE PORTFOLIO</small></span></a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div class="links" id="navLinks">
+    <a href="index.html">◈ Home</a><a href="resume.html">▤ Resume</a>
+    <a href="projects.html" class="active">⬡ Projects</a><a href="about.html">◉ About</a><a href="blog.html">✎ Blog</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+  <div class="page-hero">
+    <div class="kicker">⬡ Archive: 5 confirmed missions · carousel viewer v2.1</div>
+    <h1 style="margin:.4rem 0">Mission Archive <span style="color:var(--cyan)">/ Projects</span></h1>
+    <p class="muted">Use ◀ ▶ or wait for auto-orbit (4.5s). Each frame shows imagery + spectrographic summary (description). Replace images/descriptions with your own.</p>
+  </div>
+
+  <div class="carousel reveal" style="margin-top:1.4rem">
+    <div class="slides" id="slideTrack">
+      <div class="slide">
+        <img src="1.jpg" alt="When the blue sky disappears — wildfire project cover" onerror="this.onerror=null;this.src='https://picsum.photos/seed/exoplanet-pipeline/1100/500'">
+        <div class="cap"><span class="tag">MISSION 01 · PHOTOMETRY</span>
+          <h3>Kepler-90 Transit Pipeline</h3>
+          <p>Bayesian detrending of 200k stellar light curves. Δχ² improved 42%; 317 new candidates flagged. Stack: Python, Lightkurve, PyMC.</p>
+          <div class="proj-meta"><span>◈ MAG 12.4</span><span>◈ SNR 18.2σ</span><span>◈ STATUS: DEPLOYED</span><span id="capCount">1 / 5</span></div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/seed/nbody-webgl/1100/500" alt="N-body simulator">
+        <div class="cap"><span class="tag">MISSION 02 · WEBGL</span>
+          <h3>N-Body Gravity Simulator</h3>
+          <p>10,000-particle Barnes-Hut integrator compiled to WASM. 60fps, collision merging, Lagrange-point overlay. 190k explorers to date.</p>
+          <div class="proj-meta"><span>◈ BODIES 10⁴</span><span>◈ 60 FPS</span><span>◈ STATUS: ORBITAL</span></div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/seed/dsn-dashboard/1100/500" alt="Telemetry dashboard">
+        <div class="cap"><span class="tag">MISSION 03 · TELEMETRY</span>
+          <h3>Deep-Space Network Dashboard</h3>
+          <p>Live tracking of 14 probes (Voyager → Psyche). Kafka + WebSocket push, anomaly pager, orbital porkchop plots.</p>
+          <div class="proj-meta"><span>◈ PROBES 14</span><span>◈ LATENCY 0.4s</span><span>◈ STATUS: ACTIVE</span></div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/seed/spectra-api/1100/500" alt="Spectroscopy API">
+        <div class="cap"><span class="tag">MISSION 04 · SPECTROSCOPY</span>
+          <h3>SpecDB — Spectral Archive API</h3>
+          <p>REST + GraphQL archive of 48k HARPS spectra with cross-correlation RV pipeline. ±1.2 m/s precision. Open-sourced.</p>
+          <div class="proj-meta"><span>◈ SPECTRA 48k</span><span>◈ RV ±1.2 m/s</span><span>◈ STATUS: OPEN SOURCE</span></div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/seed/rover-planner/1100/500" alt="Mars rover planner">
+        <div class="cap"><span class="tag">MISSION 05 · ROBOTICS</span>
+          <h3>Ares Traverse Planner</h3>
+          <p>Mars-rover path planner using A* over HiRISE DEMs with slope + rock-abundance cost maps. Tested on Utah analogue field.</p>
+          <div class="proj-meta"><span>◈ SOL 1147</span><span>◈ GRID 4k²</span><span>◈ STATUS: FIELD-TESTED</span></div>
+        </div>
+      </div>
+    </div>
+    <button class="c-btn prev" id="prevBtn">◀</button>
+    <button class="c-btn next" id="nextBtn">▶</button>
+    <div class="dots" id="dots"></div>
+  </div>
+
+  <div class="grid3" style="margin-top:1.2rem">
+    <div class="card reveal"><h3>⬡ Source Signals</h3><p class="muted">All missions emit on GitHub. Dummy links — swap with yours.</p><p><a href="#" style="color:var(--cyan)">github.com/alexnova →</a></p></div>
+    <div class="card reveal"><h3>◈ Tech Constellation</h3><p><span class="tag">Python</span><span class="tag">React</span><span class="tag">Rust</span><span class="tag">Kafka</span><span class="tag">Three.js</span><span class="tag">Docker</span></p></div>
+    <div class="card reveal"><h3>✦ Next Launch</h3><p class="muted">Interferometric SAR cubesat constellation simulator. Seeking collaborators — <a href="about.html" style="color:var(--cyan)">open a channel</a>.</p></div>
+  </div>
+</div>
+<footer>© <span id="year"></span> FRANK, WONG CHI-LEON · mission archive</footer>
+<script src="main.js"></script>
+</body>
+</html>

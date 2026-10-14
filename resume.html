@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight Record (Resume) — Frank, Wong Chi-Leon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="starfield"></canvas><div class="nebula"></div>
+<nav class="nav"><div class="nav-inner">
+  <a class="brand" href="index.html"><span class="brand-orbit"></span><span>FRANK, WONG CHI-LEON<small>DEEP-SPACE PORTFOLIO</small></span></a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div class="links" id="navLinks">
+    <a href="index.html">◈ Home</a><a href="resume.html" class="active">▤ Resume</a>
+    <a href="projects.html">⬡ Projects</a><a href="about.html">◉ About</a><a href="blog.html">✎ Blog</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+  <div class="page-hero">
+    <div class="kicker">▤ Document REF: CV-2026-ORBITAL · clearance: public</div>
+    <h1 style="margin:.4rem 0">Flight Record <span style="color:var(--cyan)">/ Curriculum Vitae</span></h1>
+    <p class="muted">Six-year trajectory through academia, mission control, and deep-space startups. Quantified thrust (impact) listed per burn (role).</p>
+    <a class="btn" href="#" onclick="window.print();return false">⬇ Print / Save PDF</a>
+  </div>
+
+  <div class="grid2" style="margin-top:1.4rem">
+    <div>
+      <div class="section-title">◈ Experience Trajectory</div>
+      <div class="timeline">
+        <div class="t-item reveal"><div class="when">2023 — PRESENT · HELIOS DYNAMICS, PASADENA</div>
+          <h3>Senior Systems Engineer — Orbital Telemetry</h3>
+          <p class="muted">Lead a 5-person squad building real-time DSN dashboards. Cut anomaly response time 63%. Architected Kafka → ClickHouse pipeline ingesting 2.1M packets/day.</p>
+          <span class="tag">TypeScript</span><span class="tag">Kafka</span><span class="tag">Go</span></div>
+        <div class="t-item reveal"><div class="when">2021 — 2023 · KEPLER ANALYTICS LAB, MIT</div>
+          <h3>Research Engineer — Exoplanet Photometry</h3>
+          <p class="muted">Built Bayesian light-curve detrending pipeline; co-authored 3 papers; catalogued 2,300 transit candidates from TESS sectors 14–55.</p>
+          <span class="tag">Python</span><span class="tag">Astropy</span><span class="tag">PyMC</span></div>
+        <div class="t-item reveal"><div class="when">2019 — 2021 · NEBULA STARTUP, BERLIN</div>
+          <h3>Full-Stack Developer</h3>
+          <p class="muted">Shipped 8 client SaaS apps; WebGL solar-system explorer reached 190k users; improved Lighthouse score 54 → 98.</p>
+          <span class="tag">React</span><span class="tag">Node</span><span class="tag">Three.js</span></div>
+        <div class="t-item reveal"><div class="when">2018 — 2019 · OBSERVATORY INTERN, ESO CHILE</div>
+          <h3>Observatory Intern — Spectroscopy</h3>
+          <p class="muted">Night-ops at Paranal; calibrated HARPS spectra; automated nightly reduction scripts saving ~10 hrs/week.</p>
+          <span class="tag">Bash</span><span class="tag">IRAF</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">◈ Education & Quanta</div>
+      <div class="card reveal"><h3>Ph.D. Astrophysics — Caltech (2021)</h3><p class="muted">Thesis: <i>Bayesian inference of sub-Neptune atmospheres from transmission spectroscopy.</i> GPA 3.9. Advisor: Dr. L. Hartmann.</p></div>
+      <div class="card reveal" style="margin-top:.8rem"><h3>B.Sc. Physics + CS — TU Munich (2017)</h3><p class="muted">First-class honours. Thesis on N-body integrators. President, Astronomy Society.</p></div>
+      <div class="section-title">◈ Propulsion Systems (Skills)</div>
+      <div class="card reveal">
+        <div class="skill"><div class="row"><span>Python / Astropy / NumPy</span><span class="mono cyan">95%</span></div><div class="bar"><i data-w="95"></i></div></div>
+        <div class="skill"><div class="row"><span>TypeScript / React / Node</span><span class="mono cyan">90%</span></div><div class="bar"><i data-w="90"></i></div></div>
+        <div class="skill"><div class="row"><span>Orbital Mechanics / SPICE</span><span class="mono cyan">88%</span></div><div class="bar"><i data-w="88"></i></div></div>
+        <div class="skill"><div class="row"><span>WebGL / Three.js / D3</span><span class="mono cyan">82%</span></div><div class="bar"><i data-w="82"></i></div></div>
+        <div class="skill"><div class="row"><span>Rust / WASM</span><span class="mono cyan">70%</span></div><div class="bar"><i data-w="70"></i></div></div>
+      </div>
+      <div class="section-title">◈ Honors & Signals</div>
+      <div class="card reveal"><p class="muted">✦ NASA Space Apps Global Finalist (2023)<br>✦ AAS Poster Award (2022)<br>✦ ESO Studentship (2018)<br>✦ 4× Hackathon champion</p></div>
+    </div>
+  </div>
+</div>
+<footer>© <span id="year"></span> FRANK, WONG CHI-LEON · flight record v4.2</footer>
+<script src="main.js"></script>
+</body>
+</html>
