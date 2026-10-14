@@ -158,3 +158,32 @@ footer{border-top:1px solid var(--line); text-align:center; padding:1.6rem; colo
   .links.open{display:flex} .menu-btn{display:block}
   .slide img{height:260px}
 }
+/* Theme toggle button */
+.theme-btn{background:none; border:1px solid var(--line); border-radius:50%;
+  width:38px; height:38px; font-size:1.05rem; cursor:pointer; transition:.2s; flex:none}
+.theme-btn:hover{border-color:var(--cyan); transform:rotate(15deg)}
+/* LIGHT MODE — daylight observation deck */
+body.light{
+  --bg:#e8edf9; --bg2:#dbe4fb; --panel:rgba(255,255,255,.9);
+  --line:rgba(30,58,138,.18);
+  --cyan:#0369a1; --violet:#6d28d9; --amber:#b45309; --pink:#be185d;
+  --text:#0f172a; --muted:#475569;
+  background:radial-gradient(1200px 800px at 80% -10%,#c7d7f8 0%,transparent 60%),
+             radial-gradient(1000px 700px at 10% 10%,#ddd0fa 0%,transparent 55%),
+             var(--bg);
+}
+body.light #starfield{opacity:.1}
+body.light .nebula{opacity:.35}
+body.light .nav{background:rgba(255,255,255,.88)}
+body.light .links a{color:#475569}
+body.light .links a:hover,body.light .links a.active{color:#0f172a; background:rgba(3,105,161,.1)}
+body.light .menu-btn{color:#0f172a}
+body.light .theme-btn{background:rgba(255,255,255,.7)}
+body.light footer{background:rgba(255,255,255,.6)}
+body.light input,body.light textarea{background:rgba(255,255,255,.8); color:#0f172a}
+body.light .float-badge{background:rgba(255,255,255,.85)}
+body.light .c-btn{background:rgba(255,255,255,.7); color:#0f172a}
+body.light .page-hero::after{color:rgba(15,23,42,.2)}
+@media(max-width:900px){
+  body.light .links{background:#f1f5ff}
+}

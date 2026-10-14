@@ -115,4 +115,17 @@
 
   // Footer year
   const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+
+  // Light / dark mode toggle (persisted)
+  const tb=document.getElementById('themeBtn');
+  function setTheme(light){
+    document.body.classList.toggle('light',light);
+    if(tb) tb.textContent=light?'☀️':'🌙';
+    try{ localStorage.setItem('cosmos-theme',light?'light':'dark'); }catch(e){}
+  }
+  if(tb){
+    let saved=null; try{ saved=localStorage.getItem('cosmos-theme'); }catch(e){}
+    setTheme(saved==='light');
+    tb.onclick=()=>setTheme(!document.body.classList.contains('light'));
+  }
 })();
